@@ -1,0 +1,101 @@
+.answerDisplay {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30vh;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+.answerDisplay .content {
+  width: 270px;
+  background-color: rgba(245,245,245,0.09);
+  color: white;
+  min-height: 150px;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  /* display: -webkit-box;
+  -webkit-line-clamp: 4; 
+   line-clamp: 4;
+  -webkit-box-orient: vertical; */
+}
+.answerDisplay .content textarea{
+  resize: none;
+}
+.answerDisplay .content p{
+  margin-top: 15px;
+}
+.closing{
+  border:1px solid white;
+  padding: 2px 5px;
+  color:red;
+  border-radius: 20px;
+  align-self:self-start ;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.closing:hover{
+  box-shadow: 0px 0px 5px red;
+  padding: 3px 6px;
+  color: white;
+  border:none;
+}
+.closing:active{
+  opacity: 0.3;
+}
+.answerDisplay .content div {
+  display: flex;
+  justify-content: space-between;
+}
+.answerDisplay div button{
+  border:1px solid #fff;
+  border-radius: 3px;
+  padding: 1px 6px;
+  background-color: transparent;
+  color: #fff;
+}
+.answerDisplay div button:hover{
+  color: white;
+  background-color: rgb(0, 0, 40, 07);
+  border: none;
+  box-shadow: 0px 0px 3px red;
+  text-shadow: 1px 1px 2px red;
+  padding: 1px 7px;
+}
+.answerDisplay div button:active{
+  opacity: 0.5;
+}
+@media screen and (max-width: 425px) and (min-width: 375px) {
+  .answerDisplay .content {
+    width: 310px;
+    transition: width 0.15s;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .answerDisplay .content {
+    width: 390px;
+    transition: width 0.15s;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .answerDisplay .content {
+    width: 450px;
+    min-height: 170px;
+    transition: width 0.15s;
+    transition: height 0.15s;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .answerDisplay .content {
+    width: 450px;
+    min-height: 170px;
+    transition: width 0.15s;
+    transition: height 0.15s;
+  }
+}
+
+
